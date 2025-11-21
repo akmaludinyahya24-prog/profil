@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #0e0e16;
+  color: white;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 260px;
+  background: #0d1117;
+  height: 100vh;
+  padding: 30px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  border-right: 1px solid #222;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #1f242d;
+}
+
+.profile h2 {
+  margin-top: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0 30px;
+}
+
+.social-links a {
+  color: white;
+  background: #1f242d;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #007bff;
+}
+
+/* ===== MENU ===== */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-menu a {
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.8;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+  background: #007bff;
+  opacity: 1;
+}
+
+/* ===== CONTENT AREA ===== */
+.content {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+}
+
+/* ===== HOME SECTION ===== */
+.home {
+  height: 100vh;
+  background: url("hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  position: relative;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* Supaya teks jelas */
+}
+
+.home-text {
+  position: relative;
+  z-index: 2;
+}
+
+.home h1 {
+  font-size: 60px;
+}
+
+.typing {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+/* ===== GENERAL SECTION ===== */
+.section {
+  padding: 80px 60px;
+  background: #0f1522;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-left: 6px solid #007bff;
+  padding-left: 10px;
+}
+
+/* LIST */
+ul li {
+  margin: 10px 0;
+}
